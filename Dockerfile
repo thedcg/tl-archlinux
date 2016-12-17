@@ -30,4 +30,6 @@ RUN date --iso-8601=ns\
 	extra/asymptote\
  && date --iso-8601=ns
 
+ADD kanjix.map /var/lib/texmf/fonts/map/dvipdfmx/updmap/
+
 # 終了
