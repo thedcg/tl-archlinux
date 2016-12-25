@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-archlinux:latest
+# Dockerfile: thedcg/pandoc-archlinux:latest
 
 # ベース
 FROM pritunl/archlinux:latest
@@ -31,6 +31,9 @@ RUN date --iso-8601=ns\
 	extra/ghostscript\
 	extra/poppler-data\
 	extra/asymptote\
+	community/pandoc\
+	community/pandoc-citeproc\
+	community/pandoc-crossref\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
  && date --iso-8601=ns
 
