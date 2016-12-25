@@ -1,3 +1,3 @@
 # thedcg/tl-archlinux
-## thedcg/tl-archlinux
+## thedcg/pandoc-archlinux
 ### latest
