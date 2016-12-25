@@ -1,2 +1,3 @@
 # thedcg/tl-archlinux
-## thedcg/tl-archlinux:latest
+## thedcg/tl-archlinux
+### latest
