@@ -25,6 +25,9 @@ RUN date --iso-8601=ns\
 	extra/texlive-latexextra\
 	extra/texlive-pictures\
 	extra/texlive-science\
+	extra/texlive-bibtexextra\
+	extra/texlive-publishers\
+	community/biber\
 	extra/ghostscript\
 	extra/poppler-data\
 	extra/asymptote\
