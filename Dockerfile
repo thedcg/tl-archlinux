@@ -31,6 +31,7 @@ RUN date --iso-8601=ns\
 	extra/ghostscript\
 	extra/poppler-data\
 	extra/asymptote\
+ && ln -s /usr/bin/vendor_perl/biber /usr/bin\
  && date --iso-8601=ns
 
 ADD kanjix.map /var/lib/texmf/fonts/map/dvipdfmx/updmap/
