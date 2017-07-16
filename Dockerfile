@@ -36,4 +36,8 @@ RUN date --iso-8601=ns\
 
 ADD kanjix.map /var/lib/texmf/fonts/map/dvipdfmx/updmap/
 
+RUN date --iso-8601=ns\
+ && kanji-config-updmap-sys ipaex\
+ && date --iso-8601=ns
+
 # 終了
