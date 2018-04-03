@@ -34,6 +34,4 @@ RUN date --iso-8601=ns\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
  && date --iso-8601=ns
 
-ADD kanjix.map /var/lib/texmf/fonts/map/dvipdfmx/updmap/
-
 # 終了
