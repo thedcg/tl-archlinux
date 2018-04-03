@@ -10,9 +10,13 @@ FROM pritunl/archlinux:latest
 # 管理者
 MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 
+# Timezone
+ENV TZ=Asia/Tokyo
+
 # アップデート
 RUN date --iso-8601=ns\
  && pacman --sync --refresh --sysupgrade --noconfirm\
+	core/tzdata\
 	core/make\
 	core/openssh\
 	extra/git\
@@ -31,6 +35,8 @@ RUN date --iso-8601=ns\
 	extra/ghostscript\
 	extra/poppler-data\
 	extra/asymptote\
+ && echo "${TZ}" > /etc/timezone\
+ && ln -sf "/usr/share/zoneinfo/${TZ}" /etc/localtime\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
  && date --iso-8601=ns
 
