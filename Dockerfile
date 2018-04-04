@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-archlinux:latest
+# Dockerfile: thedcg/pandoc-archlinux:latest
 
 # ベース
 FROM pritunl/archlinux:latest
@@ -35,6 +35,9 @@ RUN date --iso-8601=ns\
 	extra/ghostscript\
 	extra/poppler-data\
 	extra/asymptote\
+	community/pandoc\
+	community/pandoc-citeproc\
+	community/pandoc-crossref\
  && echo "${TZ}" > /etc/timezone\
  && ln -sf "/usr/share/zoneinfo/${TZ}" /etc/localtime\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
