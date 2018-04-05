@@ -38,6 +38,7 @@ RUN date --iso-8601=ns\
  && echo "${TZ}" > /etc/timezone\
  && ln -sf "/usr/share/zoneinfo/${TZ}" /etc/localtime\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
+ && kanji-config-updmap-sys ipaex\
  && date --iso-8601=ns
 
 # 終了
