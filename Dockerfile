@@ -17,8 +17,10 @@ ENV TZ=Asia/Tokyo
 RUN date --iso-8601=ns\
  && pacman --sync --refresh --sysupgrade --noconfirm\
 	core/tzdata\
+	core/base-devel\
 	core/make\
 	core/openssh\
+	core/xz\
 	extra/git\
 	extra/mesa-libgl\
 	extra/texlive-bin\
@@ -32,9 +34,15 @@ RUN date --iso-8601=ns\
 	extra/texlive-bibtexextra\
 	extra/texlive-publishers\
 	community/biber\
+	extra/bc\
 	extra/ghostscript\
+	extra/gnuplot\
+	extra/imagemagick\
+	extra/libtiff\
 	extra/poppler-data\
 	extra/asymptote\
+	extra/qpdf\
+	extra/qrencode\
  && echo "${TZ}" > /etc/timezone\
  && ln -sf "/usr/share/zoneinfo/${TZ}" /etc/localtime\
  && ln -s /usr/bin/vendor_perl/biber /usr/bin\
