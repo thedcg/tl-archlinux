@@ -7,8 +7,8 @@ FROM pritunl/archlinux:latest
 ################################
 # Dockerfile
 
-# 管理者
-MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
+# Maintainer
+LABEL org.opencontainers.image.authors="Gravitates Gaudiales <gaudiales@gmail.com>"
 
 # Timezone
 ENV TZ=Asia/Tokyo
